@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Store</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img
+          class="header__logo"
+          src="img/logo.png"
+          alt="logo frontend store"
+        />
+      </a>
+    </header>
+
+    <nav class="navegacion">
+      <a
+        class="navegacion__enlace navegacion__enlace--activo"
+        href="producto.html"
+        >Tienda</a
+      >
+      <a class="navegacion__enlace navegacion__enlace" href="nosotros.html"
+        >Nosotros</a
+      >
+    </nav>
+
+    <main class="contenedor">
+      <h1>ReactJS</h1>
+      <div class="camisa">
+        <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto" />
+
+        <div class="camisa__contenido">
+          <p>
+            Cras dignissim a odio sit amet consequat. In feugiat dapibus
+            vestibulum. Duis vestibulum urna vitae massa dignissim, eu bibendum
+            nisi blandit. Ut laoreet, tellus quis scelerisque fermentum, eros
+            ante molestie dolor, molestie placerat eros diam eu est.
+          </p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected value="--Seleccionar talla--">
+                --Seleccionar talla--
+              </option>
+              <option value="Chica">Chica</option>
+              <option value="Mediana">Mediana</option>
+              <option value="Grande">Grande</option>
+            </select>
+            <select class="formulario__campo">
+              <option disabled selected value="--Cantidad--">Cantidad</option>
+              <option value="1">1</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+            </select>
+            <input
+              class="formulario__submit"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">
+        Front End Store - Todos los derechos reservados 2022.
+      </p>
+    </footer>
+  </body>
+</html>
